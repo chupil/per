@@ -1,0 +1,43 @@
+body{
+    padding:0;
+    margin:0;
+}
+.header-pg{
+    display: flex;
+    flex-direction:row;
+    height: 86px;
+    background: #fdbad9;
+    margin: 0;
+    padding: 0;
+}
+.header-flex {
+    justify-content: center; 
+   
+    
+    
+    
+}
+.header-nav{
+     justify-content: center; 
+     border:1px solid black;
+     
+}
+.logo{
+    
+     border:1px solid black;
+     
+    
+}
+
+
+.header-nav ul{
+    min-width: 277px;
+    min-height: 59;
+    list-style: none;
+    
+}
+.header-nav li{
+    display: inline-block;
+    border-right: 1px solid black;
+    padding:10px;
+}
