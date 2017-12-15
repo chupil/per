@@ -75,6 +75,9 @@ box-shadow: 0.4em 0.4em 2em #fff;
  min-width: 40em;
 }
 
+
+
+
 .grafik{
    text-align: center;
    align-self:center;
@@ -153,7 +156,7 @@ box-shadow: 0.4em 0.4em 2em #fff;
      grid-column: 1/11;
      grid-row: 15/18;
      background-color: #fdbad9;
-     
+     margin-bottom: 1em;
 }
 
 .typeME form{
@@ -165,6 +168,17 @@ box-shadow: 0.4em 0.4em 2em #fff;
     margin: 0 auto;
 }
 
+.fields{
+    display: flex;
+    flex-direction:column;
+    align-items:space-between;
+    margin:0 auto;
+    
+}
+.fields h3{
+    margin:0 auto;
+}
+
 .fields div{
     display: flex;
     align-items:flex-start;
@@ -172,16 +186,23 @@ box-shadow: 0.4em 0.4em 2em #fff;
     text-transform: capitalize;
      
 }
-.fields label{
-    width: 50%;
-}
 .fields input:not(.btn-solid-gold){
-    width: 50%;
+   
 }
-.fields [type="textarea"]{
-    min-height: 4em;
-    width: 50%;
+.fields label{
+    width: 30%;
 }
+
+.fields textarea{
+    min-height: 15em;
+    min-width: 40em;
+    outline: none;
+    resize: none;
+    overflow: hidden;
+    margin-left: 1em;
+}
+
+
 .fields div:last-child{
     margin: 0.5em 0 0 0;
     align-items:flex-start;
@@ -219,5 +240,77 @@ box-shadow: 0.4em 0.4em 2em #fff;
 .footer-grid{
    grid-column:1/11;
    grid-row:20/21;
-   background-color: red;
+   background-color: #fdbad9;
+   display: flex;
+   justify-content:space-between;
+   align-items:center;
+   padding: 0 1em 0 1em;
 }
+
+.footer-grid .ico{
+   display: flex;
+   justify-content:space-between;
+   align-items:center;
+}
+
+.ico .fa{
+    max-width: 5em;
+    max-height: 5em;
+    margin: 1em;
+    color: brown;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.news-box{
+   display: flex;
+   justify-content:flex-start;
+   align-items:center;
+   padding: 0 1em 0 1em;
+}
+.news{
+   display: flex;
+   width: 100%;
+   align-items:center;
+   padding: 0 1em 0 1em;
+   color:white;
+}
+
+.news:first-child{
+    justify-content:flex-start;
+    background:black;
+}
+.news:last-child{
+    justify-content:flex-end;
+    background:blue;
+}
+
+/*@media screen and (max-width: 681px) {*/
+/*    #hislider1{*/
+/* min-height: 20em;*/
+/* min-width: 30em;*/
+/*}*/
+/*.grafik{*/
+/*    display: none;*/
+    
+/*}*/
+/* .fields textarea{*/
+/* min-height: 10em;*/
+/* min-width: 15em;*/
+ 
+/*}*/
+/*}*/
+
+/*@media screen and (max-width: 400px) {*/
+/*    #hislider1{*/
+/* min-height: 15em;*/
+/* min-width: 16em;*/
+/* margin: 0 auto;*/
+/*}*/
+/*.fields textarea{*/
+/* height: 10em;*/
+/* width: 15em;*/
+ 
+/*}*/
+/*}*/
