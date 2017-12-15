@@ -5,18 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Копчук</title>
-    <link rel="stylesheet" href="style.css" type="text/css"/>
+    
+<!-- Start: injected by Adguard -->
+<script src="//local.adguard.com/adguard-ajax-api/injections/userscripts/Adguard Assistant?ts=63648925509108" type="text/javascript"></script>
+<script src="//local.adguard.com/adguard-ajax-api/injections/userscripts/Adguard Popup Blocker?ts=63648925509108" type="text/javascript"></script>
+<script src="//local.adguard.com/adguard-ajax-api/injections/content-script.js?ts=63648879392505&amp;domain=vfs-gce-eu-241-3.c9.io&amp;css=1&amp;js=1&amp;generic=1&amp;stealth=1" type="text/javascript"></script>
+
+<!-- End: injected by Adguard -->
+<link rel="stylesheet" href="css/index.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <script type="text/javascript" src="sliderengine/jquery.js"></script>
+    <script type="text/javascript" src="sliderengine/jquery.hislider.js"></script>
+    <script type="text/javascript" src="js/typeME.js"></script>
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 </head>
 
 <body>
-    <header class="header-pg">
-        <nav class="header-flex header-nav">
-            <ul>
-                <li><a href="#">Голoвна</a></li>
-                <li><a href="#">Послуги</a></li>
-                <li><a href="#">Консультація</a></li>
-            </ul>
+    <header class="header-grid header-pg">
+        <nav class="nav-menu">
+            <a href="#">Голoвна</a>
+            <a href="#">Послуги</a>
+            <a href="#">Консультація</a>
         </nav>
         <div class="header-flex logo">
             <div>
@@ -25,35 +34,55 @@
             <div></div>
         </div>
     </header>
-    <main>
+    <main class="main-grid">
         <!-- фото-->
-        <div class="photo-vip">
-            <div>
-                <img src="img/vip.jpg" alt="Ольга">
+        <div class="photo-info">
+            <div id="hislider1"></div>
+            <div class="grafik">
+            <table>
+                <caption><b>Графік роботи</b></caption>
+                <tr>
+                    <td>Понеділок</td>
+                    <td>123131</td>
+                </tr>
+                <tr>
+                    <td>Вівторок</td>
+                    <td>123123</td>
+                </tr>
+                <tr>
+                    <td>Середа</td>
+                    <td>123123</td>
+                </tr>
+                <tr>
+                    <td>Четвер</td>
+                    <td>123123</td>
+                </tr>
+                <tr>
+                    <td>П'ятниця</td>
+                    <td>213123</td>
+                </tr>
+            </table>
             </div>
         </div>
         <!--Опис-->
-        <article>
-            <div>
-                <div>
-                    <img src="#" alt="">
-                </div>
+        <article class="info">
+            
+                <!--<div>-->
+                <!--    <img src="#" alt="">-->
+                <!--</div>-->
                 <div class="discription">
                     <h1>Копчук Ольга Ярославівна лікар косметолог-інєкціоніст. Досвід роботи в медицині 5 років, навчання та стажування за кордоном.</h1>
-                    <ul>
-                        <li>
-                            <ul>
-                                <li>Інєкції краси:</li>
-                                <li>Контурна пластика</li>
+                    <ul class="main-menu">
+                        <li> <a href="#t">Контурна пластика</a>
+                            <ul class="sub-menu">
                                 <li>Збільшення губ</li>
                                 <li>інєкції диспорту та ботаксу</li>
                                 <li>Воюмізація радіес</li>
                                 <li>Біоревіталізація</li>
                             </ul>
                         </li>
-                        <li>
-                            <ul>
-                                <li>лікування волося та шкіри голови</li>
+                        <li><a href="#t">лікування волося та шкіри:</a>
+                            <ul class="sub-menu">
                                 <li>лікування пігментації</li>
                                 <li>інєкційна блефаропластика</li>
                                 <li>всі види чисток обличчя</li>
@@ -63,13 +92,12 @@
                         </li>
                     </ul>
                 </div>
-                <div class="btn"></div>
-            </div>
+    
         </article>
         <div class="news-box">
-            <section>
+            <section class="news">
                 <div>
-                    <img src="img/radies.png" alt="radies">
+                    <!--<img src="img/radies.png" alt="radies">-->
                 </div>
                 <h1>
                     Волюмізація Radiesse
@@ -80,9 +108,9 @@
                 </ul>
                 <div class="btn"></div>
             </section>
-            <section>
+            <section class="news">
                 <div>
-                    <img src="img/botoks.jpg" alt="botoks">
+                    <!--<img src="img/botoks.jpg" alt="botoks">-->
                 </div>
                 <h1>
                     Інєкції Ботоксу та Диспотрту
@@ -93,9 +121,9 @@
                 </ul>
                 <div class="btn"></div>
             </section>
-            <section>
+            <section class="news">
                 <div>
-                    <img src="img/women.jpg" alt="women">
+                    <!--<img src="img/women.jpg" alt="women">-->
                 </div>
                 <h1>
                     Ін'єкційна блефароплстика
@@ -107,12 +135,13 @@
                 <div class="btn"></div>
             </section>
         </div>
-        <div class="form">
-            <form>
-                <h2>Записатись на консультацію</h2>
+        <div class="typeME">
+            <form id="contact-form">
+                <fieldset class="fields">
+                    <legend>Записатись на консультацію</legend>
                 <div class="form-name">
                     <label for="name">Ім'я</label>
-                    <input type="text" name="name" id="name" />
+                    <input  type="text" name="name" id="name" />
                 </div>
                 <div class="form-mail">
                     <label for="mail">електронна пошта</label>
@@ -124,21 +153,25 @@
                 </div>
                 <div>
                     <label for="msdg">Ваше повідомлення</label>
-                    <input type="textarea" name="text" id="msdg" />
+                    <input type="textarea" name="text" id="feedback" />
                 </div>
+                <div>
+                    <input type="submit" class="btn-solid-gold" name="submit" value="Відправити"/>
+                </div>
+                </fieldset>
             </form>
         </div>
-        <footer>
-            <div>
-                <img src="#" alt="viber">viber
-            </div>
-            <div>
-                <div><i class="fa fa-facebook" aria-hidden="true"></i></div>
-                <div><i class="fa fa-google-plus" aria-hidden="true"></i></div>
-                <div><i class="fa fa-instagram" aria-hidden="true"></i></div>
-            </div>
-        </footer>
     </main>
+    <footer class="footer-grid">
+        <div>
+            <img src="#" alt="viber">viber
+        </div>
+        <div>
+            <div><i class="fa fa-facebook" aria-hidden="true"></i></div>
+            <div><i class="fa fa-google-plus" aria-hidden="true"></i></div>
+            <div><i class="fa fa-instagram" aria-hidden="true"></i></div>
+        </div>
+    </footer>
 </body>
 
 </html>
