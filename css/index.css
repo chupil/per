@@ -265,26 +265,13 @@ box-shadow: 0.4em 0.4em 2em #fff;
 
 .news-box{
    display: flex;
-   justify-content:flex-start;
-   align-items:center;
    padding: 0 1em 0 1em;
 }
 .news{
-   display: flex;
-   width: 100%;
-   align-items:center;
-   padding: 0 1em 0 1em;
-   color:white;
+    display: flex;
+    list-style: none;
 }
 
-.news:first-child{
-    justify-content:flex-start;
-    background:black;
-}
-.news:last-child{
-    justify-content:flex-end;
-    background:blue;
-}
 
 /*@media screen and (max-width: 681px) {*/
 /*    #hislider1{*/
